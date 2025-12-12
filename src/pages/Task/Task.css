@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");
+
+.task-container {
+    color: var(--text-color-primary);
+    padding-top: 4rem;
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.5) 100%);
+    user-select: none;
+    -webkit-app-region: no-drag;
+}
+
+.time {
+    font-size: 8rem;
+    font-weight: 700;
+    letter-spacing: -2px;
+    background: linear-gradient(135deg, #64c8ff 0%, #a78bfa 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.5rem;
+    animation: fadeIn 0.6s ease-out;
+}
+
+.message {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: rgba(248, 250, 252, 0.95);
+    letter-spacing: 0.5px;
+    animation: slideUp 0.6s ease-out 0.1s both;
+}
+
+.focus-question {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    color: rgba(248, 250, 252, 0.8);
+    font-weight: 500;
+    animation: slideUp 0.6s ease-out 0.2s both;
+}
+
+.task-input {
+    font-size: 1.75rem;
+    width: 40vw;
+    background: rgba(255, 255, 255, 0.08);
+    border: 2px solid rgba(100, 200, 255, 0.4);
+    color: var(--text-color-primary);
+    padding: 12px 16px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.task-input:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.12);
+    border-color: #64c8ff;
+    box-shadow: 0 0 20px rgba(100, 200, 255, 0.3);
+}
+
+.task-input::placeholder {
+    color: rgba(248, 250, 252, 0.4);
+}
+
+.user-task-container {
+    animation: slideUp 0.6s ease-out 0.2s both;
+}
+
+.user-task-container .heading-2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: rgba(248, 250, 252, 0.9);
+}
+
+.user-task-container .heading-3 {
+    font-size: 1.75rem;
+    color: rgba(248, 250, 252, 0.95);
+}
+
+.check {
+    width: 1.5rem;
+    height: 1.5rem;
+    accent-color: #64c8ff;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-right: 10px;
+}
+
+.check:hover {
+    transform: scale(1.1);
+}
+
+.check:checked {
+    box-shadow: 0 0 10px rgba(100, 200, 255, 0.5);
+}
+
+.strike-through {
+    text-decoration: line-through;
+    color: rgba(248, 250, 252, 0.5);
+    opacity: 0.6;
+}
+
+.button {
+    background-color: transparent;
+    border: none;
+    color: var(--text-color-primary);
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 6px;
+}
+
+.button:hover {
+    color: #ff6b6b;
+    background: rgba(255, 107, 107, 0.1);
+    transform: scale(1.1);
+}
+
+.button:active {
+    transform: scale(0.95);
+}
+
+.quote-container {
+    width: 50vw;
+    max-width: 600px;
+    position: absolute;
+    bottom: 3rem;
+    left: 2rem;
+    text-align: center;
+    padding: 1.75rem;
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 14px;
+    border: 1px solid rgba(100, 200, 255, 0.3);
+    backdrop-filter: blur(10px);
+    animation: slideUp 0.8s ease-out 0.3s both;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+.quote-container .heading-3 {
+    font-size: 1.25rem;
+    font-style: italic;
+    color: rgba(248, 250, 252, 0.85);
+    line-height: 1.6;
+    letter-spacing: 0.3px;
+}
+
+.todo-btn {
+    font-size: 1.75rem;
+    border: 2px solid rgba(100, 200, 255, 0.4);
+    background: rgba(100, 200, 255, 0.1);
+    color: #64c8ff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+}
+
+.todo-btn:hover {
+    cursor: pointer;
+    color: #fff;
+    background: rgba(100, 200, 255, 0.25);
+    border-color: #64c8ff;
+    box-shadow: 0 0 15px rgba(100, 200, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+.todo-btn:active {
+    transform: translateY(0);
+}
+
+.todo-btn-container {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    animation: slideUp 0.6s ease-out 0.4s both;
+}
+
+.pomodoro-nav {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: slideUp 0.6s ease-out 0.4s both;
+}
+
+.pomodoro-nav-btn {
+    font-size: 1.75rem;
+    border: 2px solid rgba(100, 200, 255, 0.4);
+    background: rgba(100, 200, 255, 0.1);
+    color: #64c8ff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+}
+
+.pomodoro-nav-btn:hover {
+    color: #fff;
+    background: rgba(100, 200, 255, 0.25);
+    border-color: #64c8ff;
+    box-shadow: 0 0 15px rgba(100, 200, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+.pomodoro-nav-btn:active {
+    transform: translateY(0);
+}
+
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

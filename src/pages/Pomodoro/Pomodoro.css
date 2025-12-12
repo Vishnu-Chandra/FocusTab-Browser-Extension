@@ -1,0 +1,59 @@
+.pomodoro-page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 48px 16px 64px;
+  color: var(--text-color-primary);
+}
+
+.pomodoro-page__header {
+  text-align: center;
+}
+
+.pomodoro-page__header h2 {
+  margin: 0;
+  font-size: 2.25rem;
+  letter-spacing: 0.5px;
+}
+
+.pomodoro-page__subtitle {
+  margin: 6px 0 0;
+  color: rgba(248, 250, 252, 0.8);
+}
+
+.pomodoro-page__hint {
+  margin: 4px 0 0;
+  color: rgba(248, 250, 252, 0.7);
+  font-size: 0.95rem;
+}
+
+.pomodoro-page__card {
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.pomodoro-back-btn {
+  margin-top: 12px;
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.08);
+  color: #e2e8f0;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.pomodoro-back-btn:hover {
+  color: #fff;
+  border-color: rgba(100, 200, 255, 0.6);
+  background: rgba(100, 200, 255, 0.15);
+}
+
+.pomodoro-back-btn:active {
+  transform: translateY(1px);
+}

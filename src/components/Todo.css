@@ -1,0 +1,96 @@
+/* ===== Container Positioned Bottom-Right ===== */
+.todo-container {
+  position: fixed;
+  bottom: 6.5rem;
+  right: 20px;
+
+  width: 320px;
+  padding: 16px 14px;
+
+  background: rgba(20, 20, 30, 0.92);
+  backdrop-filter: blur(10px);
+  border-radius: 14px;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.45);
+  color: #f1f5f9;
+  font-family: Arial, sans-serif;
+}
+
+/* ===== Header ===== */
+.todo-header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.todo-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* ===== Input Styling ===== */
+.todo-input-container {
+  width: 100%;
+}
+
+.todo-input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: #334155;
+  color: #f8fafc;
+  font-size: 14px;
+}
+
+.todo-input::placeholder {
+  color: #cbd5e1;
+}
+
+/* ===== Todo Items ===== */
+.todo-list {
+  margin-top: 12px;
+  max-height: 260px;
+  overflow-y: auto;
+}
+
+.todo-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1e293b;
+  padding: 8px 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* Checkbox + Label */
+.todo-label {
+  font-size: 14px;
+  margin-left: 6px;
+}
+
+.todo-check {
+  margin-right: 6px;
+  cursor: pointer;
+}
+
+/* Completed Style */
+.strike-through {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/* Clear Button */
+.todo-clear-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #fca5a5;
+  font-size: 18px;
+  transition: 0.25s;
+}
+
+.todo-clear-btn:hover {
+  color: #ef4444;
+}
