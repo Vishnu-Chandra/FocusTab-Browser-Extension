@@ -77,7 +77,7 @@ browserExtension/
 ```
 
 ## 📸 Screenshots
-Stored in docs/ so GitHub can render them:
+Stored in docs:
 
 | Dashboard (1) | Dashboard (2) | Pomodoro |
 | --- | --- | --- |
